@@ -1,5 +1,6 @@
 import { Options } from "./Options";
 import { DefaultOptions } from './Defults';
+import { MachineMalfunction } from "../MachineMalfunction";
 
 export class OptionsParser {
   private options: Options = {};
@@ -12,6 +13,7 @@ export class OptionsParser {
       this.options.workID = DefaultOptions.workID;
       this.options.staffID = DefaultOptions.staffID;
       this.options.malfunction = DefaultOptions.malfunction;
+      this.options.timeOnMalfunctionReported = DefaultOptions.timeOnMalfunctionReported;
     } else {
       this.options = options;
     }
@@ -31,5 +33,12 @@ export class OptionsParser {
   }
   getStaffId(): string {
     return !this.options.staffID ? DefaultOptions.staffID : this.options.staffID;
+  }
+  getMalfunction(): MachineMalfunction {
+    return !this.options.malfunction ? DefaultOptions.malfunction : this.options.malfunction;
+  }
+  getTimeOnMalfunctionReported(): number {
+    return !this.options.timeOnMalfunctionReported 
+      ? DefaultOptions.timeOnMalfunctionReported : this.options.timeOnMalfunctionReported;
   }
 }

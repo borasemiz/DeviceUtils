@@ -9,4 +9,5 @@ export const DefaultOptions = {
   timeBetweenLogs: SECOND * 5,
   staffID: '111',
   malfunction: MachineMalfunction.ROPE_SNAP,
+  timeOnMalfunctionReported: SECOND * 5,
 }

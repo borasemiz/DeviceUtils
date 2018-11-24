@@ -1,6 +1,6 @@
 import { DeviceLog } from '../models/DeviceLog';
 import { Options } from '../models/option/Options';
-import { range } from '../utils/probability';
+import { range } from './probability';
 import { MachineMalfunction } from '../models/MachineMalfunction';
 import { OptionsParser } from '../models/option/OptionParser';
  

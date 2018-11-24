@@ -9,4 +9,5 @@ export interface Options {
   timeBetweenLogs?: number;
   staffID?: string;
   malfunction?: MachineMalfunction;
+  timeOnMalfunctionReported?: number;
 }

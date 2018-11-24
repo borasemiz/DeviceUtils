@@ -3,7 +3,7 @@ import {
   withDisabilityOfTimeLenggth,
   withoutMalfunctionOfLength,
   withoutMalfunctionOfTimeLength,
-} from './utils/randomSequence';
+} from './utils/primitiveSequenceGenerators';
 
 export {
   withDisabilityOfLength,
