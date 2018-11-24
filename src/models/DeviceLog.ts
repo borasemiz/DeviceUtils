@@ -5,7 +5,7 @@ export class DeviceLog {
   workId: string;
   machineId: string;
   staffId: string;
-  malfunctionData: string;
+  malfunctionData: number;
   receivedOn: number;
 
   constructor(
@@ -15,7 +15,7 @@ export class DeviceLog {
     workId: string,
     machineId: string,
     staffId: string,
-    malfunctionData: string,
+    malfunctionData: number,
     receivedOn: number
   ) {
     this.enableStatus = enableStatus;

@@ -2,11 +2,11 @@
   "compilerOptions": {
     "declaration": true,
     "lib": ["es5", "es6", "es2017"],
-    "module": "es6",
+    "module": "umd",
     "outDir": "./dist",
-    "target": "es6"
+    "target": "es5"
   },
   "files": [
-    "./src/DeviceLog.ts"
+    "./src/index.ts"
   ]
 }
