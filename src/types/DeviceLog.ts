@@ -1,22 +1,24 @@
-export class DeviceLog {
-  enableStatus: boolean | number;
+import { RawDeviceMessage } from 'indet-models';
+
+export class DeviceLog implements RawDeviceMessage {
+  enableStatus: boolean;
   rpm: number;
   cycleCount: number;
   workId: string;
   machineId: string;
   staffId: string;
   malfunctionData: number;
-  receivedOn: number;
+  receivedOn: Date;
 
   constructor(
-    enableStatus: boolean | number,
+    enableStatus: boolean,
     rpm: number,
     cycleCount: number,
     workId: string,
     machineId: string,
     staffId: string,
     malfunctionData: number,
-    receivedOn: number
+    receivedOn: Date
   ) {
     this.enableStatus = enableStatus;
     this.rpm = rpm;

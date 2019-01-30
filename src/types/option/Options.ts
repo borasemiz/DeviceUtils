@@ -10,4 +10,6 @@ export interface Options {
   staffID?: string;
   malfunction?: MachineMalfunction;
   timeOnMalfunctionReported?: number;
+  startTime?: Date;
+  malfunctionIndex?: number;
 }

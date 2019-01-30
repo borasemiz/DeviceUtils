@@ -1,18 +1,26 @@
 {
-  "name": "deviceUtils",
+  "name": "indet-device-utils",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "tsc && node ./dist/index.js",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/borasemiz/DeviceUtils"
   },
   "keywords": [],
-  "author": "",
+  "author": "Bora Semiz",
   "license": "ISC",
   "devDependencies": {
     "@types/mocha": "^5.2.5",
+    "indet-models": "^1.0.0",
     "mocha": "^5.2.0",
-    "typescript": "^3.1.6"
+    "typescript": "^3.2.4"
+  },
+  "dependencies": {
+    "@types/node": "^10.12.10"
   }
 }

@@ -14,6 +14,8 @@ export class OptionsParser {
       this.options.staffID = DefaultOptions.staffID;
       this.options.malfunction = DefaultOptions.malfunction;
       this.options.timeOnMalfunctionReported = DefaultOptions.timeOnMalfunctionReported;
+      this.options.startTime = DefaultOptions.startTime;
+      this.options.malfunctionIndex = DefaultOptions.malfunctionIndex;
     } else {
       this.options = options;
     }
@@ -40,5 +42,13 @@ export class OptionsParser {
   getTimeOnMalfunctionReported(): number {
     return !this.options.timeOnMalfunctionReported 
       ? DefaultOptions.timeOnMalfunctionReported : this.options.timeOnMalfunctionReported;
+  }
+  getStartTime(): Date {
+    return !this.options.startTime
+      ? DefaultOptions.startTime : this.options.startTime;
+  }
+  getMalfunctionIndex(): number {
+    return typeof this.options.malfunctionIndex === 'undefined'
+      ? DefaultOptions.malfunctionIndex : this.options.malfunctionIndex;
   }
 }
