@@ -1,6 +1,6 @@
 {
   "name": "indet-device-utils",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -17,7 +17,7 @@
   "devDependencies": {
     "@types/mocha": "^5.2.5",
     "@types/node": "^10.12.19",
-    "indet-models": "^1.0.0",
+    "indet-models": "^1.1.0",
     "mocha": "^5.2.0",
     "typescript": "^3.2.4"
   },

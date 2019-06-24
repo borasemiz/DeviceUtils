@@ -8,7 +8,7 @@ export class DeviceLog implements RawDeviceMessage {
   machineId: string;
   staffId: string;
   malfunctionData: number;
-  receivedOn: Date;
+  receivedOn: number;
 
   constructor(
     enableStatus: boolean,
@@ -18,7 +18,7 @@ export class DeviceLog implements RawDeviceMessage {
     machineId: string,
     staffId: string,
     malfunctionData: number,
-    receivedOn: Date
+    receivedOn: number
   ) {
     this.enableStatus = enableStatus;
     this.rpm = rpm;

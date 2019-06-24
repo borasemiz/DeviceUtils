@@ -5,8 +5,8 @@ export function getRecordOfDate(
 ): (log: DeviceLog, ind: number, arr: DeviceLog[]) => boolean {
   return (log, ind, arr) => {
     if (ind === 0) {
-      return time === log.receivedOn;
+      return time.valueOf() === log.receivedOn;
     }
-    return arr[ind-1].receivedOn > time && time <= log.receivedOn;
+    return arr[ind-1].receivedOn > time.valueOf() && time.valueOf() <= log.receivedOn;
   }
 }

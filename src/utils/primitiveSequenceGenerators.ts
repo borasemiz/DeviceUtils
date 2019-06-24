@@ -18,7 +18,7 @@ export function generateLogsOfLength(enableStatus: boolean, length: number, opti
     const log = new DeviceLog(
       enableStatus, range(parsedOptions.getRpmRange()[0], parsedOptions.getRpmRange()[1]), range(10000, 30000),
       parsedOptions.getWorkId(), parsedOptions.getMachineId(), parsedOptions.getStaffId(),
-      MachineMalfunction.NO_MALFUNCTION, startTime
+      MachineMalfunction.NO_MALFUNCTION, startTime.valueOf()
     );
     startTime = addMilliseconds(startTime, parsedOptions.getTimeBetweenLogs());
     return log;
@@ -40,7 +40,7 @@ export function generateLogsOfTimeLength(enableStatus: boolean, milliseconds: nu
     logs.push(new DeviceLog(
       enableStatus, range(parsedOptions.getRpmRange()[0], parsedOptions.getRpmRange()[1]), range(10000, 30000),
       parsedOptions.getWorkId(), parsedOptions.getMachineId(), parsedOptions.getStaffId(),
-      MachineMalfunction.NO_MALFUNCTION, startTime
+      MachineMalfunction.NO_MALFUNCTION, startTime.valueOf()
     ));
     startTime = addMilliseconds(startTime, parsedOptions.getTimeBetweenLogs());
   }
